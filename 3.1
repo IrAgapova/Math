@@ -1,0 +1,66 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "8b4aff9c",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (2622694085.py, line 14)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Input \u001b[1;32mIn [6]\u001b[1;36m\u001b[0m\n\u001b[1;33m    print(k, n, ber_form)\u001b[0m\n\u001b[1;37m    ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "import itertools\n",
+    "\n",
+    "k, n=0, 10\n",
+    "a=np.random.randint(0, 2, n)\n",
+    "b=np.random.randint(0, 2, n)\n",
+    "c=np.random.randint(0, 2, n)\n",
+    "d=np.random.randint(0, 2, n)\n",
+    "x= a + b + c + d\n",
+    "for i in range(0, n):\n",
+    "    if x[i] == 2:\n",
+    "        k = k + 1\n",
+    "ber_form=((n//(k*(n-k))*(0.5**k)*(0.5**(n-k)))\n",
+    "print(k, n, ber_form)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "499eafba",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
